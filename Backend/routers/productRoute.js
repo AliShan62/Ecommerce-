@@ -12,7 +12,7 @@ const { authMiddleware, isAdmin } = require('../middleware/authMiddleware')
 
 //Route for Create New Product ----JUST FOR ADMIN 
 router.post("/Newproduct", authMiddleware, isAdmin, productCreateController);
-
+  // hallo
 // Route for Get All The Product  
 router.get('/GetAllproduct', productGetController)
 
