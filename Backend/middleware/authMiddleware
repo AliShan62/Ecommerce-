@@ -1,0 +1,45 @@
+const JWT = require('jsonwebtoken');
+
+const authMiddleware = async (req, res, next) => {
+    try {
+        const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
+
+        if (!token) {
+            return res.status(401).send({
+                message: 'Token missing',
+                success: false,
+            });
+        }
+
+        JWT.verify(token, process.env.JWT_SECRET, (err, decode) => {
+            if (err) {
+                return res.status(401).send({
+                    message: 'Auth Failed',
+                    success: false,
+                });
+            } else {
+                req.user = { userId: decode.id };
+                next();
+            }
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(401).send({
+            message: 'Auth Failed',
+            success: false,
+        });
+    }
+};
+
+const isAdmin = async (req, res, next) => {
+    if (req.user && req.user.role === 'admin') {
+        next();
+    } else {
+        res.status(403).send({
+            success: false,
+            message: 'Access denied. You are not an admin.',
+        });
+    }
+};
+
+module.exports = { authMiddleware, isAdmin };

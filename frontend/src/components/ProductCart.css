@@ -1,0 +1,114 @@
+/* ProductCard.css */
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.productCard p {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    font-weight: 700;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.productCard div {
+    margin: 0.5vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCardSpan {
+    margin: 0.5vmax;
+    font: 300 1vmax "Roboto";
+}
+
+.productCard span {
+    
+    color: rgb(253, 91, 63);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+    text-align:start;
+}
+ 
+.productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    transform: translateY(-1vmax);
+}
+
+.rating {
+    margin-right: 0.5vmax;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .productCard {
+        margin: 1.5vmax;
+    }
+
+    .productCard p {
+        font-size: 1.5vmax;
+    }
+
+    .productCard span {
+        font-size: 1.2vmax;
+    }
+
+    .productCard div {
+        flex-direction: column;
+    }
+
+    .productCardSpan {
+        font-size: 1.1vmax;
+    }
+
+    .rating {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .productCard {
+        margin: 1vmax;
+    }
+
+    .productCard p {
+        font-size: 2vmax;
+    }
+
+    .productCard span {
+        font-size: 1.5vmax;
+    }
+
+    .productCard div {
+        flex-direction: column;
+    }
+
+    .productCardSpan {
+        font-size: 1.3vmax;
+    }
+
+    .rating {
+        margin-right: 0;
+    }
+}

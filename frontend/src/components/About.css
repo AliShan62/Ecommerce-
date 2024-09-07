@@ -1,0 +1,48 @@
+.AboutUsContent {
+    padding: 0px 80px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family:time New Roman;
+    font-size:16;
+  }
+  
+  .AboutUsContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .AboutUsContent h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .AboutUsContent p,
+  .AboutUsContent ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .AboutUsContent ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .AboutUsContent ul li {
+    margin-bottom: 10px;
+  }
+  
+  .btn.bg-white {
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn.bg-white:hover {
+    background-color: #333;
+    color:red;
+  }
+
+  

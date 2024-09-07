@@ -1,0 +1,46 @@
+.CartPageBanner{
+    background-image:url('../images/Screenshot_2024-07-26_073537-removebg-preview.png');
+     background-size:cover;
+     background-repeat:no-repeat;
+     width:100%;
+     height:100%;
+     padding:150px 0px 0px 100px;
+     font: 600 1.5vmax "Roboto";
+     color: white;
+     
+}
+
+.para{
+    width:35%;
+    font: 1.2vmax "Roboto";
+    text-align:start;
+}
+
+.hover{
+        
+        border-radius: 50px;
+        margin-bottom:130px;
+
+}
+.hover:hover{
+    color:red;
+    
+}
+
+.CartPageBanner::after{
+    content: '';
+    width: 100vw;
+    height: 100vmin;
+    background-color:white;
+    position: absolute;
+    top:0%;
+    left: 0%; 
+    max-width: 100%;
+    
+    clip-path: polygon(100% 77%, 0 100%, 100% 100%);
+    
+}
+
+.ProductCart{
+    padding:80;
+}

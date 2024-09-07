@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px){
+.logoReactNavbar {
+
+   width: 100% !important ;
+} 
+.nav1,.nav2,.nav3,.nav4 {
+   display:flex;
+   flex-direction: row !important;
+  
+}
+
+
+}
+
+
+div.menuBurger{
+   padding :1.3vmax;
+   
+}
+
+

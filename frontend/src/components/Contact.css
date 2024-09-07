@@ -1,0 +1,49 @@
+
+  
+  .ContactDetails {
+    padding: 20px 80px 0px 80px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-family:time New Roman;
+  }
+  
+  .ContactDetails h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .ContactDetails h3 {
+    font-size: 500 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+  }
+  
+  .ContactDetails p,
+  .ContactDetails ul {
+    font-size: 16.5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .ContactDetails ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ContactDetails ul li {
+    margin-bottom: 10px;
+  }
+  
+  .btn.bg-white {
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn.bg-white:hover {
+    background-color: #333;
+    color: red;
+  }
+  
